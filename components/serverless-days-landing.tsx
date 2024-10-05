@@ -108,7 +108,7 @@ export function ServerlessDaysLandingComponent() {
         <section className="mb-20">
           <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">Our speakers</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {Array.from({ length: 20 }).map((_, i) => (
+            {Array.from({ length: 10 }).map((_, i) => (
               <div key={i} className="aspect-square">
                 <Image
                   src={`/placeholder.svg?height=200&width=200`}
