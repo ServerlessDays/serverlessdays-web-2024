@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import { ChevronRight, HandIcon, HeartHandshakeIcon, MapPinIcon, PersonStandingIcon, TreesIcon } from "lucide-react";
+import { ChevronRight, HeartHandshakeIcon, MapPinIcon, PersonStandingIcon, TreesIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, useAnimation } from "framer-motion";
 // @ts-ignore
@@ -166,7 +166,7 @@ export function ServerlessDaysLandingComponent() {
                 community; enforcing our Code of Conduct.
               </li>
               <li>
-                <strong><TreesIcon className="inline text-gray-800" /> Sustainable </strong> - Environmentally conscious event,
+                <strong><TreesIcon className="inline text-gray-800" /> Sustainable </strong> - Environmentally conscious,
                 promoting sustainable tech practices.
               </li>
             </motion.ul>
