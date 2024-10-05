@@ -70,7 +70,11 @@ body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border select-text;
+    ::selection {
+      background-color: #0BB9A7;
+      color: white;
+    }
   }
   body {
     @apply bg-background text-foreground;

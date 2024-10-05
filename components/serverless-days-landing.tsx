@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Menu, X, ChevronRight, Twitter } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { motion, useAnimation } from 'framer-motion'
+// @ts-ignore
 import { useInView } from 'react-intersection-observer'
 
 // Import mascot SVGs
@@ -15,6 +16,7 @@ import DogSVG from '@/app/images/mascottes/dog.svg'
 import MothSVG from '@/app/images/mascottes/moth.svg'
 import OctoSVG from '@/app/images/mascottes/octo.svg'
 import OwlSVG from '@/app/images/mascottes/owl.svg'
+import UnicornSVG from '@/app/images/mascottes/unicorn.svg'
 import logo from '@/app/images/logo.svg'
 
 export function ServerlessDaysLandingComponent() {
@@ -78,7 +80,7 @@ export function ServerlessDaysLandingComponent() {
       </header>
 
       <motion.div 
-        className="container mx-auto px-4 py-8 flex justify-between items-center"
+        className="container mx-auto px-4 py-8 justify-between items-center grid grid-cols-2 lg:grid-cols-7"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -86,6 +88,7 @@ export function ServerlessDaysLandingComponent() {
         <Image src={AnteaterSVG} alt="Anteater mascot" className="size-48" />
         <Image src={DinoSVG} alt="Dino mascot" className="size-48" />
         <Image src={DogSVG} alt="Dog mascot" className="size-48" />
+        <Image src={UnicornSVG} alt="Unicorn mascot" className="size-48" />
         <Image src={MothSVG} alt="Moth mascot" className="size-48" />
         <Image src={OctoSVG} alt="Octo mascot" className="size-48" />
         <Image src={OwlSVG} alt="Owl mascot" className="size-48" />
@@ -93,15 +96,15 @@ export function ServerlessDaysLandingComponent() {
 
       <main className="container mx-auto px-4 py-4">
         <motion.section 
-          className="text-center mb-40 mt-20"
+          className="text-center mb-40 mt-20 items-center flex flex-col"
           initial="hidden"
           animate="visible"
           variants={containerVariants}
         >
-          <motion.h1 className="text-6xl font-bold mb-4" variants={itemVariants}>ServerlessDays</motion.h1>
+          <motion.h1 className="text-4xl lg:text-6xl font-bold mb-4" variants={itemVariants}>ServerlessDays</motion.h1>
           <motion.p className="text-2xl mb-8" variants={itemVariants}>One Day. One Track. One Community.</motion.p>
 
-          <motion.div className="flex justify-center gap-4" variants={itemVariants}>
+          <motion.div className="max-w-xl grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-4" variants={itemVariants}>
             <Button variant="default" size="lg" className="font-semibold hover:bg-black hover:text-white transition-colors" onClick={() => document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' })}>
               Upcoming events
             </Button>
@@ -153,7 +156,7 @@ export function ServerlessDaysLandingComponent() {
           {/* New CTA section */}
           <div className="mt-12 bg-gray-100 border-2 border-black p-8 rounded-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <h3 className="text-2xl font-bold mb-4">Stay Updated on Future Events</h3>
-            <p className="mb-6">Don't miss out on upcoming ServerlessDays conferences in your area. Join our mailing list to receive updates and announcements.</p>
+            <p className="mb-6">Don&apos;t miss out on upcoming ServerlessDays conferences in your area. Join our mailing list to receive updates and announcements.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <input 
                 type="email" 
@@ -209,7 +212,7 @@ export function ServerlessDaysLandingComponent() {
 
         <section id="host" className="mb-20">
           <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">Organize</h2>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-4 max-w-prose">
             Want to bring ServerlessDays to your area? Join our mission to build a strong local serverless
             community. Contact us at <a href="mailto:organise@serverlessdays.io?subject=Interested%20in%20Organizing%20ServerlessDays" className="text-black hover:underline">organise@serverlessdays.io</a>.
           </p>
@@ -218,7 +221,7 @@ export function ServerlessDaysLandingComponent() {
 
       <footer className="bg-black text-white py-12">
         <div className="container mx-auto px-4 text-center">
-          <p className="mb-4">
+          <p className="mb-2">
             ServerlessDays is driven by passionate volunteers. Want to get involved? <a href="mailto:hello@serverlessdays.io?subject=Interested%20in%20Volunteering%20for%20ServerlessDays" className="text-white hover:underline">Contact us!</a>
           </p>
           <p className="mb-4">
