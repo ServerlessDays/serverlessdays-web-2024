@@ -2,8 +2,8 @@ import { Twitter } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white py-12">
-      <div className="container mx-auto px-4 text-center">
+    <footer className="bg-black text-white py-12 mt-20">
+      <div className="container mx-auto px-4 text-left md:text-center">
         <p className="mb-2">
           ServerlessDays is driven by passionate volunteers. Want to get
           involved?{" "}

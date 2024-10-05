@@ -45,11 +45,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono`}
       >
-        <header className="container mx-auto px-4 py-6 border-b-0 border-black">
+        <header className="container mx-auto px-4 py-6 border-b-0 border-black flex flex-col gap-12">
           <Navbar />
+          <Mascottes />
         </header>
-
-        <Mascottes />
 
         {children}
 
