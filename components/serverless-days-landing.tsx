@@ -55,7 +55,7 @@ export function ServerlessDaysLandingComponent() {
     <div className="min-h-screen bg-white text-black font-mono">
       <main className="container mx-auto px-4 py-4">
         <motion.section
-          className="text-center mb-40 mt-20 items-center flex flex-col"
+          className="text-center mb-60 mt-20 items-center flex flex-col"
           initial="hidden"
           animate="visible"
           variants={containerVariants}
