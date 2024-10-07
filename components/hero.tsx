@@ -37,8 +37,14 @@ export function Hero() {
       >
         ServerlessDays
       </motion.h1>
-      <motion.p className="text-2xl mb-8" variants={itemVariants}>
-        One Day. One Track. One Community.
+
+      <motion.p
+        className="text-xl mb-8 max-w-3xl mx-auto"
+        variants={itemVariants}
+      >
+        A global conference series dedicated to building and connecting the
+        serverless community. Locally organized, non-profit, accessible and
+        inclusive.
       </motion.p>
 
       <motion.div
