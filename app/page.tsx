@@ -9,14 +9,14 @@ import { Sponsors } from "@/components/sponsors";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black font-mono">
-      <main className="container mx-auto px-4">
+      <main className="container mx-auto px-4 flex flex-col gap-24">
         <Hero />
 
         <UpcomingEvents />
 
         <About />
 
-        <section className="mb-20">
+        <section>
           <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
             Our speakers
           </h2>
@@ -49,7 +49,7 @@ export default function Home() {
 
         <Sponsors />
 
-        <section id="host" className="mb-20">
+        <section id="host">
           <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
             Organize
           </h2>

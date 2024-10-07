@@ -13,7 +13,7 @@ export async function About() {
   ).sort();
 
   return (
-    <div className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
       <section>
         <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
           About ServerlessDays
