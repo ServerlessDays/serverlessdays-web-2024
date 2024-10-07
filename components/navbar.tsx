@@ -44,9 +44,9 @@ export function Navbar() {
       </nav>
 
       {isMenuOpen && (
-        <div className="mt-4 flex flex-col space-y-2 lg:hidden">
+        <div className="flex flex-col space-y-2 lg:hidden">
           <a href="/#join" className="hover:underline">
-            Attend
+            Upcoming events
           </a>
           <a href="/#sponsor" className="hover:underline">
             Become a sponsor

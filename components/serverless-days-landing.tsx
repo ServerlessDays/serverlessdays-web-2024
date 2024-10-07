@@ -4,9 +4,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { ChevronRight, HeartHandshakeIcon, MapPinIcon, PersonStandingIcon, TreesIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion, useAnimation } from "framer-motion";
-// @ts-ignore
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -22,15 +20,6 @@ import image3 from "@/app/images/events/2024-milano-3.webp";
 import image4 from "@/app/images/events/2024-milano-4.webp";
 
 export function ServerlessDaysLandingComponent() {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -116,9 +105,8 @@ export function ServerlessDaysLandingComponent() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <motion.section
             className="mb-20"
-            ref={ref}
             initial="hidden"
-            animate={controls}
+            animate="visible"
             variants={containerVariants}
           >
             <motion.h2
@@ -144,13 +132,13 @@ export function ServerlessDaysLandingComponent() {
               <u>locally organized</u>, and <u>not-for-profit</u>.
             </motion.p>
             <motion.h3
-              className="text-2xl font-semibold mb-4"
+              className="text-xl font-semibold mb-4 mt-8"
               variants={itemVariants}
             >
               Our core principles are:
             </motion.h3>
             <motion.ul
-              className="list-none list-outside text-lg space-y-4 max-w-prose"
+              className="list-none list-outside text-md space-y-4 max-w-prose"
               variants={itemVariants}
             >
               <li>
@@ -174,9 +162,8 @@ export function ServerlessDaysLandingComponent() {
 
           <motion.section
             className="hidden md:block"
-            ref={ref}
             initial="visible"
-            animate={controls}
+            animate="visible"
             variants={containerVariants}
           >
             <motion.div variants={itemVariants} className="">
