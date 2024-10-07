@@ -10,7 +10,7 @@ import { Speakers } from "@/components/speakers";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black font-mono">
-      <main className="container mx-auto px-4 flex flex-col gap-36">
+      <main className="container mx-auto px-4 flex flex-col gap-20 lg:gap-36">
         <Hero />
 
         <UpcomingEvents />

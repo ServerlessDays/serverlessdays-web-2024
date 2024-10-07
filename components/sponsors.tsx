@@ -41,7 +41,7 @@ export function Sponsors() {
         {SPONSORS.map((sponsor) => (
           <div
             key={sponsor.name}
-            className="bg-white p-4 py-8 rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-col items-center justify-center"
+            className="bg-white p-4 py-8 rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-col items-center justify-center aspect-square lg:aspect-auto"
           >
             <Image
               src={sponsor.logo}
@@ -53,7 +53,7 @@ export function Sponsors() {
           </div>
         ))}
       </div>
-      <p className="text-center mt-8 text-lg">
+      <p className="lg:text-center mt-8 text-lg">
         Interested in sponsoring?{" "}
         <a
           href="mailto:hello@serverlessdays.io?subject=Interested%20in%20Sponsoring%20ServerlessDays"

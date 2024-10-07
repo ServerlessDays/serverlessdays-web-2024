@@ -63,7 +63,7 @@ export default function RootLayout({
 
         {children}
 
-        <Mascottes />
+        <Mascottes small />
         <Footer />
       </body>
     </html>

@@ -16,7 +16,7 @@ export async function About({ small }: { small?: boolean }) {
   return (
     <div
       className={cn(
-        "grid grid-cols-1 gap-24 items-center",
+        "grid grid-cols-1 gap-8 lg:gap-24 items-center",
         small ? "lg:grid-cols-1 max-w-prose mx-auto" : "lg:grid-cols-2"
       )}
     >

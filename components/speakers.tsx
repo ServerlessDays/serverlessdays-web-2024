@@ -45,7 +45,7 @@ export function Speakers() {
               alt={`Speaker ${i + 1}`}
               width={200}
               height={200}
-              className="aspect-square object-cover object-top rounded-full grayscale hover:grayscale-0 transition-all duration-300 border-2 border-black"
+              className="aspect-square object-cover object-top rounded-full grayscale border-2 border-black"
             />
 
             <p className="text-center text-sm">{speaker.name}</p>
@@ -53,7 +53,7 @@ export function Speakers() {
         ))}
       </div>
 
-      <p className="text-center text-lg mt-8">
+      <p className="lg:text-center text-lg mt-8">
         Be next!{" "}
         <a
           href="mailto:hello@serverlessdays.io?subject=Interested%20in%20Speaking%20at%20ServerlessDays"
