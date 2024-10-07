@@ -20,9 +20,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "ServerlessDays - One Day. One Track. One Community.",
   description:
-    "ServerlessDays is a series of community-driven events that bring together developers to explore the latest advancements in serverless computing.",
+    "A global conference series dedicated to building and connecting the serverless community. Locally organized, non-profit, and uniquely tailored to each location.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
   authors: [
     {
@@ -32,6 +32,16 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://www.serverlessdays.io",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ServerlessDays - One Day. One Track. One Community.",
+      },
+    ],
   },
 };
 
