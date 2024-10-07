@@ -63,7 +63,17 @@ export async function About() {
       <section className="flex flex-col gap-4 items-start">
         <p>
           We organized <strong>{events.length} events</strong> in{" "}
-          <strong>{locations.length - 2} cities</strong>, including:
+          <strong>{locations.length - 2} cities</strong>, including:{" "}
+          <div className="inline md:hidden">
+            {locations
+              .filter((location) => !location.startsWith("("))
+              .slice(10, 20)
+              .map((location) => (
+                <span key={location}>{location}, </span>
+              ))}
+
+            <span>and more.</span>
+          </div>
         </p>
 
         <div className="hidden md:grid grid-cols-4 gap-2 font-mono text-sm italic">
