@@ -64,7 +64,7 @@ export async function About() {
         <p>
           We organized <strong>{events.length} events</strong> in{" "}
           <strong>{locations.length - 2} cities</strong>, including:{" "}
-          <div className="inline md:hidden">
+          <span className="inline md:hidden">
             {locations
               .filter((location) => !location.startsWith("("))
               .slice(10, 20)
@@ -73,7 +73,7 @@ export async function About() {
               ))}
 
             <span>and more.</span>
-          </div>
+          </span>
         </p>
 
         <div className="hidden md:grid grid-cols-4 gap-2 font-mono text-sm italic">
