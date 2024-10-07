@@ -23,7 +23,7 @@ export function UpcomingEventCard({
     <Card
       key={event.label}
       className={cn(
-        "bg-white border-2 rounded-lg flex flex-col items-start group-hover:shadow-none transition-all duration-300 group cursor-pointer",
+        "bg-white border-2 rounded-lg flex flex-col items-start hover:shadow-none transition-all duration-300 cursor-pointer",
         // the next conference is highlighted
         index === 0
           ? "border-secondary shadow-[4px_4px_0px_0px_rgba(11,185,167,1)] "

@@ -29,12 +29,14 @@ export function Sponsors() {
       <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
         Our sponsors
       </h2>
+
       <p className="text-lg max-w-prose mb-8">
         Each event is indipendently organized and{" "}
         <u>funded by awesome sponsors</u>. We&apos;re incredibly grateful for
         the many companies that show their continued support across the globe.
         Previous events have been sponsored by:
       </p>
+
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {SPONSORS.map((sponsor) => (
           <div
@@ -55,10 +57,11 @@ export function Sponsors() {
         Interested in sponsoring?{" "}
         <a
           href="mailto:hello@serverlessdays.io?subject=Interested%20in%20Sponsoring%20ServerlessDays"
-          className="text-black hover:underline"
+          className="text-black underline"
         >
-          Reach out to us for opportunities.
-        </a>
+          Reach out to us
+        </a>{" "}
+        for sponsorship opportunities.
       </p>
     </section>
   );

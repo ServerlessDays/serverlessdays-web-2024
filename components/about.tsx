@@ -20,9 +20,7 @@ export async function About() {
         </h2>
         <p className="text-lg mb-6 max-w-prose">
           ServerlessDays is a global conference series focused on fostering the
-          serverless community. So far, our community organized{" "}
-          <strong>{events.length} events</strong> in{" "}
-          <strong>{locations.length - 2} cities</strong> across the globe.
+          serverless community.
         </p>
         <p className="text-lg mb-6 max-w-prose">
           Each conference is <u>unique</u>,<u>locally organized</u>, and{" "}
@@ -32,37 +30,43 @@ export async function About() {
           Our core principles are:
         </h3>
         <ul className="list-none list-outside text-md space-y-4 max-w-prose">
-          <li>
+          <li className="flex flex-col items-start gap-2">
             <strong>
               <MapPinIcon className="inline text-gray-800" /> Local{" "}
             </strong>{" "}
-            - Organized by local community leaders and featuring local speakers.
+            <span>
+              Organized by local community leaders and featuring local speakers.
+            </span>
           </li>
-          <li>
+          <li className="flex flex-col items-start gap-2">
             <strong>
               <PersonStandingIcon className="inline text-gray-800" /> Accessible{" "}
             </strong>{" "}
-            - Affordable and physically accessible to all attendees.
+            Affordable and physically accessible to all attendees.
           </li>
-          <li>
+          <li className="flex flex-col items-start gap-2">
             <strong>
               <HeartHandshakeIcon className="inline text-gray-800" />{" "}
               Representative{" "}
             </strong>{" "}
-            - Reflective of the broader community; enforcing our Code of
-            Conduct.
+            Reflective of the broader community; enforcing our Code of Conduct.
           </li>
-          <li>
+          <li className="flex flex-col items-start gap-2">
             <strong>
               <TreesIcon className="inline text-gray-800" /> Sustainable{" "}
             </strong>{" "}
-            - Environmentally conscious, promoting sustainable tech practices.
+            Environmentally conscious, promoting sustainable tech practices.
           </li>
         </ul>
       </section>
 
-      <section className="hidden md:block overflow-hidden">
-        <div className="grid grid-cols-4 gap-2 font-serif italic">
+      <section className="flex flex-col gap-4 items-start">
+        <p>
+          We organized <strong>{events.length} events</strong> in{" "}
+          <strong>{locations.length - 2} cities</strong>, including:
+        </p>
+
+        <div className="hidden md:grid grid-cols-4 gap-2 font-mono text-sm italic">
           {locations
             .filter((location) => !location.startsWith("("))
             .map((location) => (
