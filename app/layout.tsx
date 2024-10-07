@@ -18,6 +18,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.serverlessdays.io"),
   title: "ServerlessDays - One Day. One Track. One Community.",
   description:
     "A global conference series dedicated to building and connecting the serverless community. Locally organized, non-profit, and uniquely tailored to each location.",

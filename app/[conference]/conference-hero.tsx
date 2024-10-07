@@ -34,7 +34,7 @@ export function ConferenceHero({ event }: { event: Event }) {
       variants={containerVariants}
     >
       <motion.h1
-        className="hidden md:block text-4xl lg:text-6xl font-bold mb-4"
+        className="break-words text-4xl lg:text-6xl font-bold mb-4"
         variants={itemVariants}
       >
         ServerlessDays {event.label}
@@ -69,7 +69,7 @@ export function ConferenceHero({ event }: { event: Event }) {
           className="font-semibold hover:bg-black hover:text-white transition-colors"
           asChild
         >
-          <Link href={`/${event.slug}/r`}>Join us in {event.label}</Link>
+          <Link href={`/${event.slug}/r`}>Details & Tickets</Link>
         </Button>
 
         <Button

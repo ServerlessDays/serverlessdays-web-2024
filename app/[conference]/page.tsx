@@ -8,7 +8,7 @@ type Props = {
   params: { conference: string };
 };
 
-export async function getMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const event = await getConference(params.conference);
 
   if (!event) {
@@ -16,7 +16,7 @@ export async function getMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `ServerlessDays ${event.label}`,
+    title: `ServerlessDays ${event.label} - ${event.humanDate}`,
     description: `Join us in ${event.label} on ${event.humanDate} for a local, no-profit, accessible and inclusive event about serverless technologies.`,
     alternates: {
       canonical: `https://www.serverlessdays.io/${event.slug}`,

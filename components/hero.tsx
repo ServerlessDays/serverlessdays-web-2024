@@ -32,7 +32,7 @@ export function Hero() {
       variants={containerVariants}
     >
       <motion.h1
-        className="hidden md:block text-4xl lg:text-6xl font-bold mb-4"
+        className="break-words text-4xl lg:text-6xl font-bold mb-4"
         variants={itemVariants}
       >
         ServerlessDays
