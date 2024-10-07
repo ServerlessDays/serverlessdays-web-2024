@@ -191,14 +191,6 @@
     "email": "madrid@serverlessdays.io"
   },
   {
-    "label": "China",
-    "slug": "china",
-    "loc": { "lat": 22.54554, "lng": 114.0683 },
-    "date": "19 June 2020",
-    "website": "https://china.serverlessdays.io",
-    "email": "china@serverlessdays.io"
-  },
-  {
     "label": "Sydney",
     "slug": "sydney",
     "loc": { "lat": -33.8779331, "lng": 151.2082085 },
