@@ -11,59 +11,58 @@ import {
 } from "./ui/card";
 import Image from "next/image";
 import { Event } from "@/lib/server";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
-export function UpcomingEventCard({
-  event,
-  index,
-}: {
-  event: Event;
-  index: number;
-}) {
+export function UpcomingEventCard({ event }: { event: Event }) {
+  const { push } = useRouter();
+  const [src, setSrc] = useState(`/images/covers/${event.slug}.webp`);
+
   return (
     <Card
       key={event.label}
       className={cn(
         "bg-white border-2 rounded-lg flex flex-col items-start hover:shadow-none transition-all duration-300 cursor-pointer",
-        // the next conference is highlighted
-        index === 0
-          ? "border-secondary shadow-[4px_4px_0px_0px_rgba(11,185,167,1)] "
-          : "border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] "
+        "border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] "
       )}
       onClick={() => {
-        window.open(`/${event.slug}`, "_blank");
+        push(`/${event.slug}`);
       }}
     >
       <CardHeader className="relative h-[200px] w-full mb-8">
         <Image
-          src={`/images/covers/${event.slug}.webp`}
-          alt={event.label}
+          src={src}
+          alt=""
           fill={true}
-          className="w-full h-[200px] object-cover object-top rounded-t-md border-b-2 border-black"
+          className="w-full h-[200px] object-cover object-top rounded-t-md border-b-2 border-black bg-[#d668a8]"
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            setSrc(`/images/covers/default-cover.webp`);
+          }}
         />
       </CardHeader>
 
-      <CardContent>
-        <CardTitle
-          className={cn(
-            "text-2xl font-semibold mb-4",
-            index === 0 && "text-secondary"
-          )}
-        >
+      <CardContent className="grow">
+        <CardTitle className={cn("text-2xl font-semibold mb-4")}>
           ServerlessDays {event.label}
         </CardTitle>
 
-        <p className="mb-4">{event.humanDate}</p>
+        <p className="mb-4">
+          {event.humanDate || event.originalDateString || ""}
+        </p>
       </CardContent>
 
       <CardFooter>
-        <a
-          href={`/${event.slug}`}
-          target="_blank"
-          rel="noopener"
-          className="group-hover:underline inline-flex items-center font-bold"
-        >
-          Get tickets <ChevronRight className="ml-1" />
-        </a>
+        {event.website ? (
+          <a
+            href={`/${event.slug}`}
+            target="_blank"
+            rel="noopener"
+            className="group-hover:underline inline-flex items-center font-bold"
+          >
+            Details &amp; Tickets <ChevronRight className="ml-1" />
+          </a>
+        ) : null}
       </CardFooter>
     </Card>
   );

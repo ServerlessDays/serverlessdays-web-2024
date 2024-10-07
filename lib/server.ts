@@ -1,9 +1,16 @@
 import events from "@/app/events.json";
-import { isValid, compareAsc, format, parse, isAfter } from "date-fns";
+import {
+  isValid,
+  compareAsc,
+  format,
+  parse,
+  isAfter,
+  isBefore,
+} from "date-fns";
 
 export type Event = {
   label: string;
-  slug: string;
+  slug?: string;
   loc: {
     lat: number;
     lng: number;
@@ -12,6 +19,7 @@ export type Event = {
   website?: string;
   date?: Date;
   humanDate?: string;
+  originalDateString?: string;
 };
 
 export const humanizeDate = (
@@ -43,9 +51,27 @@ export async function getEvents(options: { future?: boolean } = {}) {
     .sort((a, b) => compareAsc(a.date!, b.date!)) as Event[];
 
   // if future, return only future events
-  if (options.future) {
+  if (options.future === true) {
     ret = ret.filter((event) => event.date && isAfter(event.date, new Date()));
   }
 
+  if (options.future === false) {
+    ret = ret.filter((event) => event.date && isBefore(event.date, new Date()));
+  }
+
   return ret;
+}
+
+export async function getConference(slug: string) {
+  const event = events.find((event) => event.slug === slug);
+
+  if (!event) {
+    return null;
+  }
+
+  return {
+    ...event,
+    originalDateString: event.date,
+    ...humanizeDate(event.date),
+  } as Event;
 }

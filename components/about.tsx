@@ -1,4 +1,5 @@
 import { getEvents } from "@/lib/server";
+import { cn } from "@/lib/utils";
 import {
   HeartHandshakeIcon,
   MapPinIcon,
@@ -6,18 +7,26 @@ import {
   TreesIcon,
 } from "lucide-react";
 
-export async function About() {
+export async function About({ small }: { small?: boolean }) {
   const events = await getEvents();
   const locations = Array.from(
     new Set(events.map((event) => event.label))
   ).sort();
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+    <div
+      className={cn(
+        "grid grid-cols-1 gap-24 items-center",
+        small ? "lg:grid-cols-1 max-w-prose mx-auto" : "lg:grid-cols-2"
+      )}
+    >
       <section>
-        <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
-          About ServerlessDays
-        </h2>
+        {!small && (
+          <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
+            About ServerlessDays
+          </h2>
+        )}
+
         <p className="text-lg mb-6 max-w-prose">
           ServerlessDays is a global conference series focused on fostering the
           serverless community.
@@ -60,30 +69,32 @@ export async function About() {
         </ul>
       </section>
 
-      <section className="flex flex-col gap-4 items-start">
-        <p>
-          We organized <strong>{events.length} events</strong> in{" "}
-          <strong>{locations.length - 2} cities</strong>, including:{" "}
-          <span className="inline md:hidden">
+      {!small && (
+        <section className="flex flex-col gap-4 items-start">
+          <p>
+            We organized <strong>{events.length} events</strong> in{" "}
+            <strong>{locations.length - 2} cities</strong>, including:{" "}
+            <span className="inline md:hidden">
+              {locations
+                .filter((location) => !location.startsWith("("))
+                .slice(10, 20)
+                .map((location) => (
+                  <span key={location}>{location}, </span>
+                ))}
+
+              <span>and more.</span>
+            </span>
+          </p>
+
+          <div className="hidden md:grid grid-cols-4 gap-2 font-mono text-sm italic">
             {locations
               .filter((location) => !location.startsWith("("))
-              .slice(10, 20)
               .map((location) => (
-                <span key={location}>{location}, </span>
+                <div key={location}>{location}</div>
               ))}
-
-            <span>and more.</span>
-          </span>
-        </p>
-
-        <div className="hidden md:grid grid-cols-4 gap-2 font-mono text-sm italic">
-          {locations
-            .filter((location) => !location.startsWith("("))
-            .map((location) => (
-              <div key={location}>{location}</div>
-            ))}
-        </div>
-      </section>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

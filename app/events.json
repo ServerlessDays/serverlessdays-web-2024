@@ -191,46 +191,6 @@
     "email": "madrid@serverlessdays.io"
   },
   {
-    "label": "Helsinki",
-    "slug": "helsinki",
-    "loc": { "lat": 60.1733, "lng": 24.941 },
-    "email": "helsinki@serverlessdays.io",
-    "date": "Postponed until further notice",
-    "website": "https://helsinki.serverlessdays.io"
-  },
-  {
-    "label": "Boston",
-    "slug": "boston",
-    "loc": { "lat": 42.3601, "lng": -71.0589 },
-    "email": "boston@serverlessdays.io",
-    "date": "Postponed until further notice",
-    "website": "https://boston.serverlessdays.io"
-  },
-  {
-    "label": "Auckland",
-    "slug": "auckland",
-    "loc": { "lat": -36.8485, "lng": 174.7633 },
-    "email": "auckland@serverlessdays.io",
-    "date": "Postponed until further notice",
-    "website": "https://serverless.org.nz/"
-  },
-  {
-    "label": "Vienna",
-    "slug": "vienna",
-    "loc": { "lat": 48.2082, "lng": 16.3738 },
-    "email": "vienna@serverlessdays.io",
-    "website": "https://vienna.serverlessdays.io",
-    "date": "Cancelled"
-  },
-  {
-    "label": "Amsterdam",
-    "slug": "amsterdam",
-    "loc": { "lat": 52.3702, "lng": 4.8952 },
-    "email": "amsterdam@serverlessdays.io",
-    "website": "https://serverlessdays.nl",
-    "date": "Postponed until further notice"
-  },
-  {
     "label": "China",
     "slug": "china",
     "loc": { "lat": 22.54554, "lng": 114.0683 },
@@ -292,14 +252,6 @@
     "date": "17 September 2021",
     "website": "https://hamburg.serverlessdays.io",
     "email": "hamburg@serverlessdays.io"
-  },
-  {
-    "label": "Nashville",
-    "slug": "nashville",
-    "loc": { "lat": 36.1627, "lng": -86.7816 },
-    "email": "nashville@serverlessdays.io",
-    "website": "https://serverlessnashville.io",
-    "date": "Postponed"
   },
   {
     "label": "New York",

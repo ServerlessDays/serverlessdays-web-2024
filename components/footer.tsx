@@ -1,4 +1,5 @@
 import { Twitter } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -24,14 +25,34 @@ export function Footer() {
           </a>
           .
         </p>
-        <a
-          href="https://twitter.com/ServerlessDays"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-white hover:underline"
-        >
-          <Twitter className="mr-2" /> @ServerlessDays
-        </a>
+
+        <div className="flex gap-2 items-center justify-center">
+          <Link
+            href="https://twitter.com/ServerlessDays"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-white hover:underline"
+          >
+            <Twitter className="mr-2" /> @ServerlessDays
+          </Link>
+          |
+          <Link
+            href="https://d3d115r6478ga.cloudfront.net/ServerlessDays Media Kit.zip"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-white underline"
+          >
+            Media Kit
+          </Link>
+          |
+          <Link
+            href="/past-events"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-white underline"
+          >
+            Past Events
+          </Link>
+        </div>
       </div>
     </footer>
   );
