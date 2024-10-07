@@ -3,6 +3,7 @@ import { isValid, compareAsc, format, parse, isAfter } from "date-fns";
 
 export type Event = {
   label: string;
+  slug: string;
   loc: {
     lat: number;
     lng: number;
@@ -11,7 +12,6 @@ export type Event = {
   website?: string;
   date?: Date;
   humanDate?: string;
-  image?: string;
 };
 
 export const humanizeDate = (
@@ -40,7 +40,6 @@ export async function getEvents(options: { future?: boolean } = {}) {
       ...event,
       ...humanizeDate(event.date),
     }))
-    .filter((event) => isValid(event.date))
     .sort((a, b) => compareAsc(a.date!, b.date!)) as Event[];
 
   // if future, return only future events

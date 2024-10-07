@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 // Import mascot SVGs
-import AnteaterSVG from "@/app/images/mascottes/anteater.svg";
-import DinoSVG from "@/app/images/mascottes/dino.svg";
-import DogSVG from "@/app/images/mascottes/dog.svg";
-import MothSVG from "@/app/images/mascottes/moth.svg";
-import OctoSVG from "@/app/images/mascottes/octo.svg";
-import OwlSVG from "@/app/images/mascottes/owl.svg";
-import UnicornSVG from "@/app/images/mascottes/unicorn.svg";
+import AnteaterSVG from "@/app/mascottes/anteater.svg";
+import DinoSVG from "@/app/mascottes/dino.svg";
+import DogSVG from "@/app/mascottes/dog.svg";
+import MothSVG from "@/app/mascottes/moth.svg";
+import OctoSVG from "@/app/mascottes/octo.svg";
+import OwlSVG from "@/app/mascottes/owl.svg";
+import UnicornSVG from "@/app/mascottes/unicorn.svg";
 
 export function Mascottes() {
   return (
@@ -20,13 +20,41 @@ export function Mascottes() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <Image src={AnteaterSVG} alt="Anteater mascot" className="hidden lg:block size-48" />
-      <Image src={DinoSVG} alt="Dino mascot" className="hidden lg:block size-48" />
-      <Image src={DogSVG} alt="Dog mascot" className="hidden lg:block size-48" />
-      <Image src={UnicornSVG} alt="Unicorn mascot" className="size-64 lg:size-48 mx-auto" />
-      <Image src={MothSVG} alt="Moth mascot" className="hidden lg:block size-48" />
-      <Image src={OctoSVG} alt="Octo mascot" className="hidden lg:block size-48" />
-      <Image src={OwlSVG} alt="Owl mascot" className="hidden lg:block size-48" />
+      <Image
+        src={AnteaterSVG}
+        alt="Anteater mascot"
+        className="hidden lg:block size-48"
+      />
+      <Image
+        src={DinoSVG}
+        alt="Dino mascot"
+        className="hidden lg:block size-48"
+      />
+      <Image
+        src={DogSVG}
+        alt="Dog mascot"
+        className="hidden lg:block size-48"
+      />
+      <Image
+        src={UnicornSVG}
+        alt="Unicorn mascot"
+        className="size-64 lg:size-48 mx-auto"
+      />
+      <Image
+        src={MothSVG}
+        alt="Moth mascot"
+        className="hidden lg:block size-48"
+      />
+      <Image
+        src={OctoSVG}
+        alt="Octo mascot"
+        className="hidden lg:block size-48"
+      />
+      <Image
+        src={OwlSVG}
+        alt="Owl mascot"
+        className="hidden lg:block size-48"
+      />
     </motion.div>
   );
 }

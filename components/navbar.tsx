@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { MenuIcon, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/app/images/logo.svg";
+import logo from "@/app/logo.svg";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
