@@ -14,7 +14,12 @@ import { Event } from "@/lib/server";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export function UpcomingEventCard({ event }: { event: Event }) {
+type Props = {
+  event: Event;
+  type: "past" | "upcoming";
+};
+
+export function UpcomingEventCard({ event, type }: Props) {
   const { push } = useRouter();
   const [src, setSrc] = useState(`/images/covers/${event.slug}.webp`);
 
@@ -53,16 +58,8 @@ export function UpcomingEventCard({ event }: { event: Event }) {
       </CardContent>
 
       <CardFooter>
-        {event.website ? (
-          <a
-            href={`/${event.slug}`}
-            target="_blank"
-            rel="noopener"
-            className="group-hover:underline inline-flex items-center font-bold"
-          >
-            Details &amp; Tickets <ChevronRight className="ml-1" />
-          </a>
-        ) : null}
+        {type === "past" ? "More Info" : "Get Tickets"}{" "}
+        <ChevronRight className="ml-1" />
       </CardFooter>
     </Card>
   );
