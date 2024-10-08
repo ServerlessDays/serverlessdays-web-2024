@@ -37,7 +37,7 @@ export function Footer() {
           </Link>
           |
           <Link
-            href="https://d3d115r6478ga.cloudfront.net/ServerlessDays Media Kit.zip"
+            href="https://assets.serverlessdays.io/ServerlessDays Media Kit.zip"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-white underline"
