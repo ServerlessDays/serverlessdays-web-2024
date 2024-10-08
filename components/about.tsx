@@ -7,7 +7,13 @@ import {
   TreesIcon,
 } from "lucide-react";
 
-export async function About({ small }: { small?: boolean }) {
+export async function About({
+  small,
+  extended,
+}: {
+  small?: boolean;
+  extended?: boolean;
+}) {
   const events = await getEvents();
   const locations = Array.from(
     new Set(events.map((event) => event.label))
@@ -17,7 +23,9 @@ export async function About({ small }: { small?: boolean }) {
     <div
       className={cn(
         "grid grid-cols-1 gap-8 lg:gap-24 items-center",
-        small ? "lg:grid-cols-1 max-w-prose mx-auto" : "lg:grid-cols-2"
+        small || extended
+          ? "lg:grid-cols-1 max-w-prose mx-auto"
+          : "lg:grid-cols-2"
       )}
     >
       <section>

@@ -13,6 +13,7 @@ import Image from "next/image";
 import { Event } from "@/lib/server";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Link from "next/link";
 
 type Props = {
   event: Event;
@@ -27,7 +28,7 @@ export function UpcomingEventCard({ event, type }: Props) {
     <Card
       key={event.label}
       className={cn(
-        "bg-white border-2 rounded-lg flex flex-col items-start hover:shadow-none transition-all duration-300 cursor-pointer",
+        "bg-white border-2 rounded-lg flex flex-col items-start hover:shadow-none transition-all duration-300 cursor-pointer group",
         "border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] "
       )}
       onClick={() => {
@@ -58,8 +59,17 @@ export function UpcomingEventCard({ event, type }: Props) {
       </CardContent>
 
       <CardFooter>
-        {type === "past" ? "More Info" : "Get Tickets"}{" "}
-        <ChevronRight className="ml-1" />
+        <Link
+          href={`/${event.slug}`}
+          prefetch={true}
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          className="group-hover:underline inline-flex items-center font-bold"
+        >
+          {type === "past" ? "More Info" : "Get Tickets"}{" "}
+          <ChevronRight className="ml-1" />
+        </Link>
       </CardFooter>
     </Card>
   );

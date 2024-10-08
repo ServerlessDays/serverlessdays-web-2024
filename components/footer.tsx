@@ -1,5 +1,7 @@
-import { Twitter } from "lucide-react";
 import Link from "next/link";
+import X from "@/components/icons/social-x.svg";
+import Youtube from "@/components/icons/social-yt.svg";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,32 +10,41 @@ export function Footer() {
         <p className="mb-2">
           ServerlessDays is driven by passionate volunteers. Want to get
           involved?{" "}
-          <a
+          <Link
             href="mailto:hello@serverlessdays.io?subject=Interested%20in%20Volunteering%20for%20ServerlessDays"
-            className="text-white hover:underline"
+            className="text-white underline"
           >
             Contact us!
-          </a>
+          </Link>
         </p>
         <p className="mb-4">
           For questions, sponsorships, or press inquiries, reach out at{" "}
-          <a
+          <Link
             href="mailto:hello@serverlessdays.io?subject=ServerlessDays%20Inquiry"
-            className="text-white hover:underline"
+            className="text-white underline"
           >
             hello@serverlessdays.io
-          </a>
+          </Link>
           .
         </p>
 
         <div className="flex gap-2 items-center justify-center">
           <Link
-            href="https://twitter.com/ServerlessDays"
+            href="https://x.com/ServerlessDays"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-white hover:underline"
           >
-            <Twitter className="mr-2" /> @ServerlessDays
+            <Image src={X} alt="X" width={18} height={18} />
+          </Link>
+          |
+          <Link
+            href="https://www.youtube.com/@serverlessdays"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-white hover:underline"
+          >
+            <Image src={Youtube} alt="YouTube" width={24} height={24} />
           </Link>
           |
           <Link
@@ -51,6 +62,14 @@ export function Footer() {
             className="inline-flex items-center text-white underline"
           >
             Past Events
+          </Link>
+          |
+          <Link
+            href="/about"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-white underline"
+          >
+            About
           </Link>
         </div>
       </div>

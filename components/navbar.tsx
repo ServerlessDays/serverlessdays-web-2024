@@ -19,16 +19,32 @@ export function Navbar() {
         </Link>
 
         <div className="hidden lg:flex space-x-6">
-          <a href="/#join" className="hover:underline">
+          <Link
+            href="/#join"
+            className="no-underline hover:underline"
+            prefetch={true}
+          >
             Upcoming events
-          </a>
-          <a href="/#sponsor" className="hover:underline">
+          </Link>
+          <Link
+            href="/#sponsor"
+            className="no-underline hover:underline"
+            prefetch={true}
+          >
             Become a sponsor
-          </a>
-          <a href="/#host" className="hover:underline">
+          </Link>
+          <Link
+            href="/#host"
+            className="no-underline hover:underline"
+            prefetch={true}
+          >
             Host an event
-          </a>
-          <Link href="/coc" className="hover:underline">
+          </Link>
+          <Link
+            href="/coc"
+            className="no-underline hover:underline"
+            prefetch={true}
+          >
             Code of conduct
           </Link>
         </div>
@@ -45,16 +61,32 @@ export function Navbar() {
 
       {isMenuOpen && (
         <div className="flex flex-col space-y-2 lg:hidden">
-          <a href="/#join" className="hover:underline">
+          <Link
+            href="/#join"
+            className="no-underline hover:underline"
+            prefetch={true}
+          >
             Upcoming events
-          </a>
-          <a href="/#sponsor" className="hover:underline">
+          </Link>
+          <Link
+            href="/#sponsor"
+            className="no-underline hover:underline"
+            prefetch={true}
+          >
             Become a sponsor
-          </a>
-          <a href="/#host" className="hover:underline">
+          </Link>
+          <Link
+            href="/#host"
+            className="no-underline hover:underline"
+            prefetch={true}
+          >
             Host an event
-          </a>
-          <Link href="/coc" className="hover:underline">
+          </Link>
+          <Link
+            href="/coc"
+            className="no-underline hover:underline"
+            prefetch={true}
+          >
             Code of conduct
           </Link>
         </div>
