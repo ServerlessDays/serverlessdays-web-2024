@@ -40,6 +40,7 @@ export function UpcomingEventCard({ event, type }: Props) {
           src={src}
           alt=""
           fill={true}
+          sizes="400px"
           className="w-full h-[200px] object-cover object-top rounded-t-md border-b-2 border-black bg-[#d668a8]"
           onError={(e) => {
             e.currentTarget.onerror = null;

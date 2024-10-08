@@ -42,6 +42,7 @@ export function Mascottes({ small = false }: { small?: boolean }) {
       <Image
         src={UnicornSVG}
         alt="Unicorn mascot"
+        priority={true}
         className={cn(small ? "size-48" : "size-64 lg:size-48", "mx-auto")}
       />
       <Image
