@@ -345,7 +345,7 @@
     "label": "Milano",
     "slug": "milano",
     "date": "13 June 2024",
-    "loc": { "lat": 45.4642, "lng": 9.19 },
+    "loc": { "lat": 45.45585, "lng": 9.1781322 },
     "email": "milan@serverlessdays.io",
     "website": "https://milan.serverlessdays.io"
   },
