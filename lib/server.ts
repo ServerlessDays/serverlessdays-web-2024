@@ -6,6 +6,7 @@ import {
   parse,
   isAfter,
   isBefore,
+  isSameDay,
 } from "date-fns";
 
 export type Event = {
@@ -52,7 +53,7 @@ export async function getEvents(options: { future?: boolean } = {}) {
 
   // if future, return only future events
   if (options.future === true) {
-    ret = ret.filter((event) => event.date && isAfter(event.date, new Date()));
+    ret = ret.filter((event) => event.date && (isAfter(event.date, new Date()) || isSameDay(event.date, new Date())));
   }
 
   if (options.future === false) {
