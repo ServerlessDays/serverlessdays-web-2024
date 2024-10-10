@@ -396,5 +396,13 @@
     "date": "10 October 2024",
     "website": "https://cardiff.serverlessdays.io",
     "email": "cardiff@serverlessdays.io"
+  },
+  {
+    "label": "Milano",
+    "slug": "milano",
+    "date": "12 June 2025",
+    "loc": { "lat": 45.4642, "lng": 9.19 },
+    "email": "milan@serverlessdays.io",
+    "website": "https://milan.serverlessdays.io"
   }
 ]
