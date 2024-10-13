@@ -22,9 +22,9 @@ export async function About({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 gap-8 lg:gap-24 items-center",
+        "grid grid-cols-1 gap-8 lg:gap-24 items-center prose",
         small || extended
-          ? "lg:grid-cols-1 max-w-prose mx-auto"
+          ? "lg:grid-cols-1"
           : "lg:grid-cols-2"
       )}
     >
@@ -94,7 +94,12 @@ export async function About({
             </span>
           </p>
 
-          <div className="hidden md:grid grid-cols-4 gap-2 font-mono text-sm italic">
+          <div
+            className={cn(
+              "hidden md:grid gap-2 font-mono text-sm italic",
+              extended ? "grid-cols-6" : "grid-cols-4"
+            )}
+          >
             {locations
               .filter((location) => !location.startsWith("("))
               .map((location) => (

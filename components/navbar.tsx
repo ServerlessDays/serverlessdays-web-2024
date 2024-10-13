@@ -41,7 +41,7 @@ export function Navbar() {
             Host an event
           </Link>
           <Link
-            href="/coc"
+            href="/coc/en"
             className="no-underline hover:underline"
             prefetch={true}
           >

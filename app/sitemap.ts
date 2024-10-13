@@ -26,6 +26,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${BASE_URL}/coc`,
       lastModified: lastModified,
     },
+    ...["en", "it", "fr", "pt-br", "es"].map((lang) => ({
+      url: `${BASE_URL}/coc/${lang}`,
+      lastModified: lastModified,
+    })),
     {
       url: `${BASE_URL}/past-events`,
       lastModified: lastModified,
