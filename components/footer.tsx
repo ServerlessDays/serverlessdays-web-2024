@@ -28,7 +28,7 @@ export function Footer() {
           .
         </p>
 
-        <div className="flex gap-2 items-center justify-center">
+        <div className="flex flex-wrap gap-2 items-center justify-center">
           <Link
             href="https://x.com/ServerlessDays"
             target="_blank"

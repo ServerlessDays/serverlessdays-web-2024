@@ -6,6 +6,7 @@ import { UpcomingEvents } from "@/components/upcoming-events";
 import { About } from "@/components/about";
 import { Sponsors } from "@/components/sponsors";
 import { Speakers } from "@/components/speakers";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,14 +28,10 @@ export default function Home() {
           </h2>
           <p className="text-lg mb-4 max-w-prose">
             Want to bring ServerlessDays to your area? Join our mission to build
-            a strong local serverless community. Contact us at{" "}
-            <a
-              href="mailto:organise@serverlessdays.io?subject=Interested%20in%20Organizing%20ServerlessDays"
-              className="text-black hover:underline"
-            >
-              organise@serverlessdays.io
-            </a>
-            .
+            a strong local serverless community.
+            <br />
+            <br />
+            Read more about <Link href="/organize">how to organize a ServerlessDays event</Link>.
           </p>
         </section>
       </main>
