@@ -7,6 +7,11 @@ import { About } from "@/components/about";
 import { Sponsors } from "@/components/sponsors";
 import { Speakers } from "@/components/speakers";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ServerlessDays",
+};
 
 export default function Home() {
   return (

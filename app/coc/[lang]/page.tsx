@@ -6,6 +6,12 @@ import contentIt from "./page-it.md?raw";
 import contentFr from "./page-fr.md?raw";
 import contentPtBr from "./page-pt-br.md?raw";
 import contentEs from "./page-es.md?raw";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Code of Conduct - ServerlessDays",
+  description: "ServerlessDays is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices.",
+};
 
 export default async function CodeOfConduct({ params }: { params: { lang: string } }) {
   let content: string;

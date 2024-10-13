@@ -3,8 +3,8 @@ import { UpcomingEventCard } from "@/components/upcoming-event-card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ServerlessDays - Past Events",
-  description: "Past ServerlessDays events",
+  title: "Past events - ServerlessDays",
+  description: "Explore past ServerlessDays events from around the world. Discover the history of our community-organized conferences on serverless technologies.",
 };
 
 export default async function PreviousEventsPage() {
