@@ -8,10 +8,10 @@ const lastModified = new Date(); // cached at build time
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const conferences = await getEvents();
 
-  const conferenceUrls = conferences.map((conference) => ({
+  const conferenceUrls = Array.from(new Set(conferences.map((conference) => ({
     url: `${BASE_URL}/${conference.slug}`,
     lastModified: lastModified,
-  }));
+  }))));
 
   return [
     {

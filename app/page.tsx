@@ -22,7 +22,7 @@ export default function Home() {
 
         <Sponsors />
 
-        <section id="host">
+        <section id="host" className="scroll-mt-14">
           <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
             Organize
           </h2>

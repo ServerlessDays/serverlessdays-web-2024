@@ -25,7 +25,7 @@ const SPONSORS = [
 
 export function Sponsors() {
   return (
-    <section id="sponsor">
+    <section id="sponsor" className="scroll-mt-14">
       <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
         Our sponsors
       </h2>

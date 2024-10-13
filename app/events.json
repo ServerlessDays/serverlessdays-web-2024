@@ -25,6 +25,7 @@
   },
   {
     "label": "Jaipur",
+    "slug": "jaipur",
     "loc": { "lat": 26.9126, "lng": 75.7905 },
     "date": "17 February 2019",
     "email": "jaipur@serverlessdays.io",
@@ -32,6 +33,7 @@
   },
   {
     "label": "Austin",
+    "slug": "austin",
     "loc": { "lat": 30.256445, "lng": -97.763543 },
     "email": "austin@serverlessdays.io",
     "website": "https://atx.serverlessdays.io",
@@ -39,6 +41,7 @@
   },
   {
     "label": "Atlanta",
+    "slug": "atlanta",
     "loc": { "lat": 33.7493, "lng": -84.3855 },
     "email": "atlanta@serverlessdays.io",
     "website": "https://atlanta.serverlessdays.io",
@@ -46,6 +49,7 @@
   },
   {
     "label": "Tel Aviv",
+    "slug": "tel-aviv",
     "loc": { "lat": 32.071751, "lng": 34.789118 },
     "website": "https://tlv.serverlessdays.io",
     "date": "4 June 2019",
@@ -53,6 +57,7 @@
   },
   {
     "label": "London",
+    "slug": "london",
     "loc": { "lat": 51.5127, "lng": -0.0906 },
     "website": "https://london.serverlessdays.io",
     "date": "11 July 2019",
@@ -60,6 +65,7 @@
   },
   {
     "label": "Sydney",
+    "slug": "sydney",
     "loc": { "lat": -33.8787, "lng": 151.2138 },
     "website": "https://sydney.serverlessdays.io",
     "date": "27 August 2019",
@@ -67,6 +73,7 @@
   },
   {
     "label": "Melbourne",
+    "slug": "melbourne",
     "loc": { "lat": -37.8033, "lng": 144.9717 },
     "email": "melbourne@serverlessdays.io",
     "website": "https://www.serverlessdays.me",
@@ -74,6 +81,7 @@
   },
   {
     "label": "Belgrade",
+    "slug": "belgrade",
     "loc": { "lat": 44.81892, "lng": 20.45998 },
     "email": "belgrade@serverlessdays.io",
     "website": "https://serverlessbelgrade.com",
@@ -81,6 +89,7 @@
   },
   {
     "label": "İstanbul",
+    "slug": "istanbul",
     "loc": { "lat": 41.024891, "lng": 28.956651 },
     "date": "03 October 2019",
     "email": "istanbul@serverlessdays.io",
@@ -88,6 +97,7 @@
   },
   {
     "label": "Tokyo",
+    "slug": "tokyo",
     "loc": { "lat": 35.6762, "lng": 139.6503 },
     "email": "japan@serverlessdays.io",
     "website": "https://tokyo.serverlessdays.io",
@@ -95,6 +105,7 @@
   },
   {
     "label": "Fukuoka",
+    "slug": "fukuoka",
     "loc": { "lat": 33.5902, "lng": 130.4017 },
     "date": "14 December 2019",
     "email": "japan@serverlessdays.io",

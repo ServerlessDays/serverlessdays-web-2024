@@ -21,8 +21,9 @@ export async function About({
 
   return (
     <div
+      id="about"
       className={cn(
-        "grid grid-cols-1 gap-8 lg:gap-24 items-center prose",
+        "grid grid-cols-1 gap-8 lg:gap-24 items-center prose scroll-mt-14",
         small || extended
           ? "lg:grid-cols-1"
           : "lg:grid-cols-2"

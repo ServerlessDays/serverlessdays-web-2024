@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono min-h-screen`}
       >
         <header className="container mx-auto px-4 py-6 border-b-0 border-black flex flex-col gap-12">
           <Navbar />

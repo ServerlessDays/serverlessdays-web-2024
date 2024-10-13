@@ -53,7 +53,7 @@ export function Hero() {
       >
         <Button
           variant="default"
-          size="lg"
+          size="xl"
           className="font-semibold hover:bg-black hover:text-white transition-colors"
           onClick={() =>
             document
@@ -65,7 +65,7 @@ export function Hero() {
         </Button>
         <Button
           variant="outline"
-          size="lg"
+          size="xl"
           className="font-semibold hover:bg-black hover:text-white transition-colors"
           onClick={() =>
             document
@@ -77,7 +77,7 @@ export function Hero() {
         </Button>
         <Button
           variant="outline"
-          size="lg"
+          size="xl"
           className="font-semibold hover:bg-black hover:text-white transition-colors"
           onClick={() =>
             document

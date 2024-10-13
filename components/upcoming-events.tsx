@@ -7,11 +7,12 @@ export async function UpcomingEvents() {
   });
 
   return (
-    <section id="join">
+    <section id="join" className="scroll-mt-14">
       <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
         Upcoming conferences
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {events.map((event) => (
           <UpcomingEventCard key={event.slug} event={event} type="upcoming" />
         ))}

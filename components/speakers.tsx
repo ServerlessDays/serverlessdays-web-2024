@@ -24,7 +24,7 @@ const SPEAKERS = [
 
 export function Speakers() {
   return (
-    <section>
+    <section id="speakers" className="scroll-mt-14">
       <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
         Our speakers
       </h2>
