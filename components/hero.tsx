@@ -2,6 +2,7 @@
 
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
+import { RainbowButton } from "./ui/rainbow-button";
 
 export function Hero() {
   const containerVariants = {
@@ -51,10 +52,8 @@ export function Hero() {
         className="max-w-xl grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-4"
         variants={itemVariants}
       >
-        <Button
-          variant="default"
-          size="xl"
-          className="font-semibold hover:bg-black hover:text-white transition-colors"
+        <RainbowButton
+          className="font-semibold hover:bg-black hover:text-white transition-colors h-12 px-12 text-base"
           onClick={() =>
             document
               .getElementById("join")
@@ -62,7 +61,7 @@ export function Hero() {
           }
         >
           Upcoming events
-        </Button>
+        </RainbowButton>
         {/* <Button
           variant="outline"
           size="xl"

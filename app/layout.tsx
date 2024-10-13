@@ -5,6 +5,8 @@ import "./globals.css";
 import { Mascottes } from "@/components/mascottes";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { cn } from "@/lib/utils";
+import { DotPattern } from "@/components/ui/dot-pattern";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -54,8 +56,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-mono min-h-screen relative`}
       >
+        <DotPattern
+          width={20}
+          height={20}
+          cx={10}
+          cy={10}
+          cr={1}
+          className={cn(
+          "[mask-image:linear-gradient(to_bottom_right,white_20%,transparent_80%,transparent)] pt-20 h-[calc(100vh-5rem)]",
+        )}
+      />
+      
         <header className="container mx-auto px-4 py-6 border-b-0 border-black flex flex-col gap-12">
           <Navbar />
           <Mascottes />

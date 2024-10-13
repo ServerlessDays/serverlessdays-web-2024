@@ -13,6 +13,8 @@ import { ArrowRightIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "ServerlessDays",
+  description:
+    "A global conference series dedicated to building and connecting the serverless community. Locally organized, non-profit, and uniquely tailored to each location.",
 };
 
 export default function Home() {
@@ -53,7 +55,8 @@ export default function Home() {
             asChild
           >
             <Link href="/organize" className="no-underline">
-              How to organize an event <ArrowRightIcon className="w-4 h-4 ml-2" />
+              How to organize an event{" "}
+              <ArrowRightIcon className="w-4 h-4 ml-2" />
             </Link>
           </Button>
         </section>
