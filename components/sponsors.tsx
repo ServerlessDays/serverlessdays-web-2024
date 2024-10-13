@@ -3,8 +3,6 @@ import logoCloudflare from "@/app/sponsors/cloudflare-logo.svg";
 import logoNTTDATA from "@/app/sponsors/nttdata-logo.svg";
 import logoSG from "@/app/sponsors/sg-logo.svg";
 import Image from "next/image";
-import { Button } from "./ui/button";
-import Link from "next/link";
 
 const SPONSORS = [
   {
