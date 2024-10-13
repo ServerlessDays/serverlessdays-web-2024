@@ -9,7 +9,7 @@ async function getMarkdownContent(md: string) {
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeClassNames, {
-      h1: 'text-5xl font-bold mb-4',
+      h1: 'text-4xl lg:text-5xl font-bold mb-4',
       h2: 'text-3xl font-bold mb-4 mt-8',
       h3: 'text-xl font-bold mb-4 mt-8',
       h4: 'text-lg font-bold mb-4 mt-6',

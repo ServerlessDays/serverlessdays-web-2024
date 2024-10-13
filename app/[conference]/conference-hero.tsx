@@ -69,7 +69,7 @@ export function ConferenceHero({ event }: { event: Event }) {
           className="font-semibold hover:bg-black hover:text-white transition-colors"
           asChild
         >
-          <Link href={`/${event.slug}/r`}>Details & Tickets</Link>
+          <Link href={`/${event.slug}/r`} className="no-underline">Details & Tickets</Link>
         </Button>
 
         <Button
@@ -78,7 +78,7 @@ export function ConferenceHero({ event }: { event: Event }) {
           className="font-semibold hover:bg-black hover:text-white transition-colors"
           asChild
         >
-          <Link href="/">Find other events</Link>
+          <Link href="/" className="no-underline">Find other events</Link>
         </Button>
       </motion.div>
     </motion.section>

@@ -48,7 +48,7 @@ export function Hero() {
       </motion.p>
 
       <motion.div
-        className="max-w-xl grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-4"
+        className="max-w-xl grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-4"
         variants={itemVariants}
       >
         <Button
@@ -63,7 +63,7 @@ export function Hero() {
         >
           Upcoming events
         </Button>
-        <Button
+        {/* <Button
           variant="outline"
           size="xl"
           className="font-semibold hover:bg-black hover:text-white transition-colors"
@@ -74,7 +74,7 @@ export function Hero() {
           }
         >
           Become a sponsor
-        </Button>
+        </Button> */}
         <Button
           variant="outline"
           size="xl"

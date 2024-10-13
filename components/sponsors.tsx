@@ -3,6 +3,8 @@ import logoCloudflare from "@/app/sponsors/cloudflare-logo.svg";
 import logoNTTDATA from "@/app/sponsors/nttdata-logo.svg";
 import logoSG from "@/app/sponsors/sg-logo.svg";
 import Image from "next/image";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const SPONSORS = [
   {
@@ -32,7 +34,7 @@ export function Sponsors() {
 
       <p className="text-lg max-w-prose mb-8">
         Each event is indipendently organized and{" "}
-        <u>funded by awesome sponsors</u>. We&apos;re incredibly grateful for
+        <strong>funded by awesome sponsors</strong>. We&apos;re incredibly grateful for
         the many companies that show their continued support across the globe.
         Previous events have been sponsored by:
       </p>
@@ -53,6 +55,7 @@ export function Sponsors() {
           </div>
         ))}
       </div>
+
       <p className="lg:text-center mt-8 text-lg">
         Interested in sponsoring?{" "}
         <a

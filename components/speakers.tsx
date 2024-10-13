@@ -34,7 +34,7 @@ export function Speakers() {
         <u>speakers from local and global</u> serverless community.
       </p>
 
-      <div className="grid grid-cols-2 lg:grid-cols-9 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-9 gap-12 lg:gap-4">
         {SPEAKERS.map((speaker, i) => (
           <div
             key={speaker.name}

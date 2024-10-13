@@ -35,7 +35,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center text-white hover:underline"
           >
-            <Image src={X} alt="X" width={18} height={18} />
+            <Image src={X} alt="X" width={18} height={18} className="text-white" />
           </Link>
           |
           <Link
@@ -44,7 +44,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center text-white hover:underline"
           >
-            <Image src={Youtube} alt="YouTube" width={24} height={24} />
+            <Image src={Youtube} alt="YouTube" width={24} height={24} className="text-white" />
           </Link>
           |
           <Link
@@ -62,6 +62,14 @@ export function Footer() {
             className="inline-flex items-center text-white underline"
           >
             Past Events
+          </Link>
+          |
+          <Link
+            href="/organize"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-white underline"
+          >
+            Organize
           </Link>
           |
           <Link

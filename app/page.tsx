@@ -8,6 +8,8 @@ import { Sponsors } from "@/components/sponsors";
 import { Speakers } from "@/components/speakers";
 import Link from "next/link";
 import { Metadata } from "next";
+import { Button } from "@/components/ui/button";
+import { ArrowRightIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "ServerlessDays",
@@ -27,17 +29,33 @@ export default function Home() {
 
         <Sponsors />
 
-        <section id="host" className="scroll-mt-14">
-          <h2 className="text-4xl font-bold mb-6 border-b-0 border-black pb-2">
+        <section
+          id="host"
+          className="scroll-mt-14 flex flex-col gap-6 items-start mb-24"
+        >
+          <h2 className="text-4xl font-bold border-b-0 border-black pb-2">
             Organize
           </h2>
-          <p className="text-lg mb-4 max-w-prose">
+
+          <p className="text-lg max-w-prose">
             Want to bring ServerlessDays to your area? Join our mission to build
             a strong local serverless community.
             <br />
             <br />
-            Read more about <Link href="/organize">how to organize a ServerlessDays event</Link>.
+            Read more about{" "}
+            <Link href="/organize">how to organize a ServerlessDays event</Link>
+            .
           </p>
+
+          <Button
+            size="lg"
+            className="font-semibold hover:bg-black hover:text-white transition-colors"
+            asChild
+          >
+            <Link href="/organize" className="no-underline">
+              How to organize an event <ArrowRightIcon className="w-4 h-4 ml-2" />
+            </Link>
+          </Button>
         </section>
       </main>
     </div>
