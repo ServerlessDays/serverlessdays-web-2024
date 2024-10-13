@@ -50,7 +50,7 @@ export function UpcomingEventCard({ event, type }: Props) {
       </CardHeader>
 
       <CardContent className="grow">
-        <CardTitle className={cn("text-2xl font-semibold mb-4")}>
+        <CardTitle className={cn("text-2xl font-semibold mb-4 text-balance")}>
           ServerlessDays {event.label}
         </CardTitle>
 

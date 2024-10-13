@@ -1,6 +1,6 @@
 # Codice di Condotta
 
-**Sommario:** Unicorn dice "siate eccellenti gli uni con gli altri."
+**Sommario:** L'unicorno dice "siate eccellenti gli uni con gli altri."
 
 ## Riguardo questo Codice di Condotta
 

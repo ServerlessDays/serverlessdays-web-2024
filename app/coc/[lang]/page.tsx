@@ -26,7 +26,7 @@ export default async function CodeOfConduct({ params }: { params: { lang: string
 
   return (
     <div className="container mx-auto max-w-3xl px-4">
-      <div className="grid grid-cols-2 lg:grid-cols-4 mb-8 gap-2">
+      <div className="flex flex-row flex-wrap gap-4 mb-8">
         <ActiveLink href="/coc/en">English</ActiveLink>
         <ActiveLink href="/coc/it">Italian</ActiveLink>
         <ActiveLink href="/coc/pt-br">Português (Brasil)</ActiveLink>

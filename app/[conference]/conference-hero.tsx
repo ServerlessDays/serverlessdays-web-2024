@@ -60,25 +60,16 @@ export function ConferenceHero({ event }: { event: Event }) {
       </motion.p>
 
       <motion.div
-        className="max-w-xl grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-4"
+        className="max-w-xl grid grid-cols-1 justify-center items-center gap-4"
         variants={itemVariants}
       >
         <Button
           variant="default"
-          size="lg"
+          size="xl"
           className="font-semibold hover:bg-black hover:text-white transition-colors"
           asChild
         >
           <Link href={`/${event.slug}/r`} className="no-underline">Details & Tickets</Link>
-        </Button>
-
-        <Button
-          variant="outline"
-          size="lg"
-          className="font-semibold hover:bg-black hover:text-white transition-colors"
-          asChild
-        >
-          <Link href="/" className="no-underline">Find other events</Link>
         </Button>
       </motion.div>
     </motion.section>
