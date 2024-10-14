@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { MenuIcon, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/app/logo.svg";
+import { Logo } from "./logo";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +14,7 @@ export function Navbar() {
     <>
       <nav className="flex items-center justify-between">
         <Link href="/">
-          <Image src={logo} alt="ServerlessDays Logo" width={300} priority />
+          <Logo />
         </Link>
 
         <div className="hidden lg:flex space-x-6">

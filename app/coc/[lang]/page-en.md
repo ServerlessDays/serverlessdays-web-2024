@@ -6,7 +6,7 @@
 
 All attendees, speakers, sponsors, staff and volunteers at our conferences are required to agree with the following code of conduct. Organizers are required to enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
 
-> This is the only official version of the code of conduct and shall be enforced in all events with the ServerlessDays brand, without exceptions and without any changes. Organizers are required to directly link to this page.
+> This is the only official version of the code of conduct and shall be enforced in all events with the ServerlessDays brand, without exceptions and without any changes. Organizers are required to directly link to this page: [https://serverlessdays.io/coc](https://serverlessdays.io/coc).
 
 ## "Be excellent with each other"
 

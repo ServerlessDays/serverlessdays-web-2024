@@ -24,9 +24,7 @@ export async function About({
       id="about"
       className={cn(
         "grid grid-cols-1 gap-8 lg:gap-24 items-center prose scroll-mt-14",
-        small || extended
-          ? "lg:grid-cols-1"
-          : "lg:grid-cols-2"
+        small || extended ? "lg:grid-cols-1" : "lg:grid-cols-2"
       )}
     >
       <section>
@@ -41,8 +39,8 @@ export async function About({
           serverless community.
         </p>
         <p className="text-lg mb-6 max-w-prose">
-          Each conference is <u>unique</u>,<u>locally organized</u>, and{" "}
-          <u>not-for-profit</u>.
+          Each conference is <strong>unique</strong>,<strong>locally organized</strong>, and{" "}
+          <strong>not-for-profit</strong>.
         </p>
         <h3 className="text-xl font-semibold mb-4 mt-8">
           Our core principles are:

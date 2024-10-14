@@ -1,8 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import ShimmerButton from "@/components/ui/shimmer-button";
 import { Event } from "@/lib/server";
 import { motion } from "framer-motion";
+import {  SquareArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
 
 export function ConferenceHero({ event }: { event: Event }) {
@@ -28,7 +29,7 @@ export function ConferenceHero({ event }: { event: Event }) {
 
   return (
     <motion.section
-      className="text-center my-16 items-center flex flex-col"
+      className="text-center my-8 items-center flex flex-col"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -41,7 +42,7 @@ export function ConferenceHero({ event }: { event: Event }) {
       </motion.h1>
 
       <motion.p
-        className="text-xl mb-8 max-w-3xl mx-auto"
+        className="text-xl mb-8 max-w-3xl mx-auto leading-8"
         variants={itemVariants}
       >
         Join us in{" "}
@@ -63,14 +64,12 @@ export function ConferenceHero({ event }: { event: Event }) {
         className="max-w-xl grid grid-cols-1 justify-center items-center gap-4"
         variants={itemVariants}
       >
-        <Button
-          variant="default"
-          size="xl"
+        <Link href={`/${event.slug}/r`} className="no-underline">
+        <ShimmerButton
           className="font-semibold hover:bg-black hover:text-white transition-colors"
-          asChild
         >
-          <Link href={`/${event.slug}/r`} className="no-underline">Details & Tickets</Link>
-        </Button>
+          Visit website <SquareArrowUpRightIcon className="size-4 ml-2" /></ShimmerButton>
+        </Link>
       </motion.div>
     </motion.section>
   );

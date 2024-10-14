@@ -6,7 +6,7 @@
 
 Todos os participantes, palestrantes, patrocinadores, funcionários e voluntários em nossas conferências são obrigados a concordar com o seguinte código de conduta. Os organizadores são obrigados a fazer cumprir este código durante todo o evento. Esperamos a cooperação de todos os participantes para ajudar a garantir um ambiente seguro para todos.
 
-> Esta é a única versão oficial do código de conduta e deve ser aplicada em todos os eventos com a marca ServerlessDays, sem exceções e sem quaisquer alterações. Os organizadores são obrigados a vincular diretamente esta página.
+> Esta é a única versão oficial do código de conduta e deve ser aplicada em todos os eventos com a marca ServerlessDays, sem exceções e sem quaisquer alterações. Os organizadores são obrigados a vincular diretamente esta página: [https://serverlessdays.io/coc](https://serverlessdays.io/coc).
 
 ## "Sejam excelentes uns com os outros"
 

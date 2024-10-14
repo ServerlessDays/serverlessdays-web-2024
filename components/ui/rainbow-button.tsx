@@ -26,7 +26,7 @@ export function RainbowButton({
         // dark mode colors
         "dark:bg-[linear-gradient(#fff,#fff),linear-gradient(#fff_50%,rgba(255,255,255,0.6)_80%,rgba(0,0,0,0)),linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))]",
 
-        "bg-primary text-primary-foreground shadow hover:bg-primary/90 rounded-md h-12 px-4 py-2",
+        "bg-primary text-primary-foreground shadow hover:bg-primary/90 rounded-md h-12 px-4 py-2  hover:scale-105 active:scale-95 transition-all",
 
         className
       )}

@@ -69,7 +69,7 @@ export default function RootLayout({
         )}
       />
       
-        <header className="container mx-auto px-4 py-6 border-b-0 border-black flex flex-col gap-12">
+        <header className="container mx-auto px-4 py-6 border-b-0 border-black flex flex-col gap-4">
           <Navbar />
           <Mascottes />
         </header>

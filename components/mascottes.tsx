@@ -17,7 +17,7 @@ export function Mascottes({ small = false }: { small?: boolean }) {
   return (
     <motion.div
       className={cn(
-        "container mx-auto px-4 lg:py-8 justify-between items-center grid",
+        "container mx-auto px-4 lg:py-4 lg:pt-8 justify-between items-center grid max-w-5xl",
         small ? "grid-cols-7" : "grid-cols-1 lg:grid-cols-7"
       )}
       initial={{ opacity: 0 }}

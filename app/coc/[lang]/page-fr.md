@@ -6,7 +6,7 @@
 
 Tous les participants, intervenants, sponsors, membres du personnel et bénévoles de nos conférences sont tenus d'accepter le code de conduite suivant. Les organisateurs sont tenus de faire respecter ce code tout au long de l'événement. Nous attendons la coopération de tous les participants pour assurer un environnement sûr pour tous.
 
-> Il s'agit de la seule version officielle du code de conduite qui sera appliquée dans tous les événements de la marque ServerlessDays, sans exception et sans aucune modification. Les organisateurs sont tenus de faire un lien direct vers cette page.
+> Il s'agit de la seule version officielle du code de conduite qui sera appliquée dans tous les événements de la marque ServerlessDays, sans exception et sans aucune modification. Les organisateurs sont tenus de faire un lien direct vers cette page: [https://serverlessdays.io/coc](https://serverlessdays.io/coc).
 
 ## "Soyez excellents les uns envers les autres"
 

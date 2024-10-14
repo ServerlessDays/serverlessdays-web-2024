@@ -50,12 +50,12 @@ export default function Home() {
           </p>
 
           <Button
-            size="lg"
+            size="xl"
             className="font-semibold hover:bg-black hover:text-white transition-colors"
             asChild
           >
             <Link href="/organize" className="no-underline">
-              How to organize an event{" "}
+              How to organize{" "}
               <ArrowRightIcon className="w-4 h-4 ml-2" />
             </Link>
           </Button>

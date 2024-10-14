@@ -27,7 +27,7 @@ export function Hero() {
 
   return (
     <motion.section
-      className="text-center my-8 lg:my-16 items-center flex flex-col"
+      className="text-center my-8 lg:my-8 items-center flex flex-col"
       initial="hidden"
       animate="visible"
       variants={containerVariants}

@@ -9,6 +9,7 @@ import headshotEmrahSamdan from "@/app/speakers/emrah-samdan.webp";
 import headshotJeremyDaly from "@/app/speakers/jeremy-daly.webp";
 import headshotLucVanDonkersgoed from "@/app/speakers/luc-van-donkersgoed.webp";
 import headshotSlobodanStojanovic from "@/app/speakers/slobodan-stojanovic.webp";
+import Marquee from "./ui/marquee";
 
 const SPEAKERS = [
   { name: "Sheen Brisals", image: headshotSheenBrisals },
@@ -34,23 +35,25 @@ export function Speakers() {
         <u>speakers from local and global</u> serverless community.
       </p>
 
-      <div className="grid grid-cols-2 lg:grid-cols-9 gap-12 lg:gap-4">
-        {SPEAKERS.map((speaker, i) => (
-          <div
+      <div className="w-full">
+        <Marquee pauseOnHover className="w-full">
+          {SPEAKERS.map((speaker, i) => (
+            <div
             key={speaker.name}
-            className="flex flex-col items-center justify-start gap-4"
+            className="flex flex-col items-center justify-start gap-4 px-4"
           >
             <Image
               src={speaker.image}
               alt={`Speaker ${i + 1}`}
               width={200}
               height={200}
-              className="aspect-square object-cover object-top rounded-full grayscale border-2 border-black"
+              className="aspect-square object-cover object-top rounded-full border-2 border-black"
             />
 
             <p className="text-center text-sm">{speaker.name}</p>
-          </div>
-        ))}
+            </div>
+          ))}
+        </Marquee>
       </div>
 
       <p className="lg:text-center text-lg mt-8">

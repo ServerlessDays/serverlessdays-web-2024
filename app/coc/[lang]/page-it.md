@@ -6,7 +6,7 @@
 
 Tutti i partecipanti, relatori, sponsor, staff e volontari alle nostre conferenze sono tenuti ad accettare il seguente codice di condotta. Gli organizzatori sono tenuti a far rispettare questo codice durante tutto l'evento. Ci aspettiamo la cooperazione di tutti i partecipanti per garantire un ambiente sicuro per tutti.
 
-> Questa è l'unica versione ufficiale del codice di condotta e sarà applicata in tutti gli eventi con il marchio ServerlessDays, senza eccezioni e senza alcuna modifica. Gli organizzatori sono tenuti a linkare direttamente a questa pagina.
+> Questa è l'unica versione ufficiale del codice di condotta e sarà applicata in tutti gli eventi con il marchio ServerlessDays, senza eccezioni e senza alcuna modifica. Gli organizzatori sono tenuti a linkare direttamente a questa pagina: [https://serverlessdays.io/coc](https://serverlessdays.io/coc).
 
 ## "Siate eccellenti gli uni con gli altri"
 
