@@ -3,7 +3,7 @@
 import ShimmerButton from "@/components/ui/shimmer-button";
 import { Event } from "@/lib/server";
 import { motion } from "framer-motion";
-import {  SquareArrowUpRightIcon } from "lucide-react";
+import { SquareArrowUpRightIcon } from "lucide-react";
 import Link from "next/link";
 
 export function ConferenceHero({ event }: { event: Event }) {
@@ -47,7 +47,9 @@ export function ConferenceHero({ event }: { event: Event }) {
       >
         Join us in{" "}
         <Link
-          href={`https://www.google.com/maps?q=${event.loc.lat},${event.loc.lng}`}
+          href={`https://www.google.com/maps?q=${event.loc?.lat ?? 0},${
+            event.loc?.lng ?? 0
+          }`}
           target="_blank"
           rel="noopener noreferrer"
           className="underline font-bold text-secondary"
@@ -65,10 +67,9 @@ export function ConferenceHero({ event }: { event: Event }) {
         variants={itemVariants}
       >
         <Link href={`/${event.slug}/r`} className="no-underline">
-        <ShimmerButton
-          className="font-semibold hover:bg-black hover:text-white transition-colors"
-        >
-          Visit website <SquareArrowUpRightIcon className="size-4 ml-2" /></ShimmerButton>
+          <ShimmerButton className="font-semibold hover:bg-black hover:text-white transition-colors">
+            Visit website <SquareArrowUpRightIcon className="size-4 ml-2" />
+          </ShimmerButton>
         </Link>
       </motion.div>
     </motion.section>
