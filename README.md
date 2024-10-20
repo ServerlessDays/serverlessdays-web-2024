@@ -7,3 +7,5 @@
 1. Fork this repo
 2. Edit `app/events.json`
 3. Submit a PR
+
+.
