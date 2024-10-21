@@ -35,7 +35,13 @@ export function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center text-white hover:underline"
           >
-            <Image src={X} alt="X" width={18} height={18} className="text-white" />
+            <Image
+              src={X}
+              alt="X"
+              width={18}
+              height={18}
+              className="text-white"
+            />
           </Link>
           |
           <Link
@@ -44,7 +50,13 @@ export function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center text-white hover:underline"
           >
-            <Image src={Youtube} alt="YouTube" width={24} height={24} className="text-white" />
+            <Image
+              src={Youtube}
+              alt="YouTube"
+              width={24}
+              height={24}
+              className="text-white"
+            />
           </Link>
           |
           <Link
@@ -78,6 +90,16 @@ export function Footer() {
             className="inline-flex items-center text-white underline"
           >
             About
+          </Link>
+          |
+          <Link
+            href="https://www.allthingsserverless.com"
+            target="_blank"
+            prefetch={true}
+            rel="noopener"
+            className="inline-flex items-center text-white underline"
+          >
+            All Things Serverless
           </Link>
         </div>
       </div>
