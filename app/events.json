@@ -409,9 +409,17 @@
     "email": "cardiff@serverlessdays.io"
   },
   {
+    "label": "Belfast",
+    "slug": "belfast",
+    "loc": { "lat": 54.6078, "lng": -5.9264 },
+    "date": "15 May 2025",
+    "website": "https://serverlessdaysbelfast.com/",
+    "email": "belfast@serverlessdays.io"
+  },
+  {
     "label": "Milano",
     "slug": "milano",
-    "date": "12 June 2025",
+    "date": "25 September 2025",
     "loc": { "lat": 45.4642, "lng": 9.19 },
     "email": "milan@serverlessdays.io",
     "website": "https://milan.serverlessdays.io"
