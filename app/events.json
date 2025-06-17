@@ -423,5 +423,13 @@
     "loc": { "lat": 45.4642, "lng": 9.19 },
     "email": "milan@serverlessdays.io",
     "website": "https://milan.serverlessdays.io"
+  },
+  {
+    "label": "São Paulo",
+    "slug": "saopaulo",
+    "date": "08 November 2025",
+    "loc": { "lat": -23.596483534073293, "lng": -46.68680237631906 },
+    "email": "saopaulo@serverlessdays.io",
+    "website": "https://sdsp.io/"
   }
 ]
