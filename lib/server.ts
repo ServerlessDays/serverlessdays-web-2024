@@ -8,7 +8,6 @@ import {
   isBefore,
   isSameDay,
 } from "date-fns";
-import { enUS } from "date-fns/locale";
 
 export type Event = {
   label: string;
@@ -34,13 +33,13 @@ export const humanizeDate = (
     return { date: null, humanDate: "" };
   }
 
-  const dateObj = parse(date, "d MMMM yyyy", new Date(), { locale: enUS });
+  const dateObj = parse(date, "d MMMM yyyy", new Date());
 
   if (!isValid(dateObj)) {
     return { date: null, humanDate: `${date}` };
   }
 
-  const humanDate = format(dateObj, "d MMMM yyyy", {});
+  const humanDate = format(dateObj, "d MMMM yyyy");
   return { date: dateObj, humanDate };
 };
 
