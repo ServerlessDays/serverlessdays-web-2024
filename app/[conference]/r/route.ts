@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import events from "@/app/events.json";
+import events from "@/public/events.json";
 
 export async function GET(
   request: Request,

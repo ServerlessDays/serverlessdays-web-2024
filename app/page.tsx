@@ -8,7 +8,6 @@ import { Sponsors } from "@/components/sponsors";
 import { Speakers } from "@/components/speakers";
 import Link from "next/link";
 import { Metadata } from "next";
-export const dynamic = "force-dynamic";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
 
