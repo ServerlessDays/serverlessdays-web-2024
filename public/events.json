@@ -412,7 +412,7 @@
     "label": "Milano",
     "slug": "milano",
     "date": "21 October 2025",
-    "loc": { "lat": 45.4642, "lng": 9.19 },
+    "loc": { "lat": 45.4442013, "lng": 9.1643823 },
     "email": "milan@serverlessdays.io",
     "website": "https://milan.serverlessdays.io"
   },
