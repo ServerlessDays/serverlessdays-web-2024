@@ -353,8 +353,8 @@
     "email": "anz@serverlessdays.io"
   },
   {
-    "label": "Milano",
-    "slug": "milano",
+    "label": "Milano 2024",
+    "slug": "Milano 2024",
     "date": "13 June 2024",
     "loc": { "lat": 45.45585, "lng": 9.1781322 },
     "email": "milan@serverlessdays.io",
